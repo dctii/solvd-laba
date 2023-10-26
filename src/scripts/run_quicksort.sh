@@ -51,7 +51,7 @@ test_status pass="Pre-cleaning process successful." fail="Pre-cleaning process f
 
 
 
-# Check file existence
+# check all needed files are present
 missing_files=()
 for COMPILEE in "${COMPILEE_ARRAY[@]}"; do
   if [ ! -f "${COMPILEE}" ]; then
@@ -60,7 +60,7 @@ for COMPILEE in "${COMPILEE_ARRAY[@]}"; do
   fi
 done
 
-# If any files are missing, exit
+# exit if any needed files are missing
 if [ ${#missing_files[@]} -ne 0 ]; then
   echo -e "\033[31mThere are missing files. Exiting...\033[0m"
   exit 1
@@ -68,7 +68,7 @@ else
   echo -e "\033[32mAll compilees present.\033[0m"
 fi
 
-# If we reach here, all files exist. Proceed with compilation.
+# compile needed files
 for COMPILEE in "${COMPILEE_ARRAY[@]}"; do
   javac "${COMPILEE}"
   test_status pass="'${COMPILEE}' compiled successfully." fail="'${COMPILEE}' compilation failed."
