@@ -1,7 +1,5 @@
 # Solvd Laba Test Automation Fall-Winter 2023
 
-## Assignments:
-
 Uses:
 
 - IntelliJ IDEA 2023.2.3 (Community Edition)
@@ -9,7 +7,11 @@ Uses:
 - OpenJDK Runtime Environment Homebrew (build 11.0.21+0)
 - OpenJDK 64-Bit Server VM Homebrew (build 11.0.21+0, mixed mode)
 
-### Assignment 1: QuickSort
+## Assignments:
+
+1. QuickSort
+
+### 1. Assignment 1: QuickSort
 
 #### Task:
 
