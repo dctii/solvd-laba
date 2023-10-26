@@ -15,6 +15,8 @@ Uses:
 
 #### Task:
 
+Given sorting algorithm = quick sort
+
 1. "Implement given sorting algorithm for integer numbers"
 2. "Implement given sorting algorithm for char letters"
 
@@ -25,46 +27,40 @@ Arrays.sort for example
 
 ##### Execution:
 
-Assuming you are in the project root folder: `javac` and `java` commands
+`javac` and `java` commands
 
 ```shell
-# pre-clean up of *.class files
-rm -rf *.class
-rm -rf utils/*.class
+ # run from the root folder
+ cd /path/to/project-root/src
 
+# compile
 javac utils/Sort.java
-javac utils/Data.java
+javac Data.java
 javac Main.java
 
+# run
 java Main
 
-# post-clean up of *.class files
-rm -rf *.class
-rm -rf utils/*.class
 
 ```
 
 Alternatively:
 
 ```shell
-# Unix-style: zsh or bash, etc.
-
 # if using bash
-bash src/scripts/run_quicksort.zsh
-
-# if using zsh
-zsh src/scripts/run_quicksort.zsh
+cd /path/to/project-root/src
+bash scripts/run_quicksort.zsh
 ```
 
-##### Expected results:
+```shell
+# if using zsh
+cd /path/to/project-root/src
+zsh scripts/run_quicksort.zsh
+```
+
+##### Expected results of sorted arrays in ascending and descending order:
 
 ```shell
-javac utils/Sort.java
-javac utils/Data.java
-javac Main.java
-
-java Main
-
 ascending:
 [-2, 2, 3, 3, 4, 4, 4, 5, 32, 32, 34, 34, 35, 43, 67, 75, 75, 232, 232, 453, 546, 4342]
 [-43, -35, -4, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 23, 23, 23, 23, 32, 32, 32, 32, 34, 34, 34, 34, 34, 34, 34, 34, 35, 35, 35, 43, 43, 43, 232, 232, 232, 232, 232, 232, 232, 232]
