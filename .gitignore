@@ -31,3 +31,4 @@ bin/
 
 ### misc ###
 playground/
+**/*.ps1
