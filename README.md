@@ -99,7 +99,6 @@ solvd-laba
     ├── Data.java # contains arrays of unsorted data to be sorted
     ├── Main.java # contains loop for executing numbers and letters arrays
     ├── scripts
-    │   ├── run_quicksort.ps1 # powershell script, may need to change '/' to '\' for Windows users
     │   └── run_quicksort.sh # Unix-style shell script
     └── utils
         └── Sort.java # class that contains quick(), the quick sort function, and its subordinate functions
