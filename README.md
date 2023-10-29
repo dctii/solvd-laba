@@ -49,13 +49,13 @@ Alternatively:
 ```shell
 # if using bash
 cd /path/to/project-root/src
-bash scripts/run_quicksort.zsh
+bash scripts/run_quicksort.sh
 ```
 
 ```shell
 # if using zsh
 cd /path/to/project-root/src
-zsh scripts/run_quicksort.zsh
+zsh scripts/run_quicksort.sh
 ```
 
 ##### Expected results of sorted arrays in ascending and descending order:
