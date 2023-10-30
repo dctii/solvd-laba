@@ -19,8 +19,8 @@ public class Sort {
      * @param T comparandum: subject for comparing
      * @param T comparans: criteria to compare subject against
      * @param String sortType: determines "ascending" or "descending" order of elements
-     * @return -1: value signaling comparandum is lt comparans
-     * @return 1: value signaling comparandum is gt comparans
+     * @return -1: value signaling comparandum is lt comparans, inverse if @case "desc"
+     * @return 1: value signaling comparandum is gt comparans, inverse if @case "desc"
      * @return 0: value signaling comparandum is eq to comparans
      * @throw IllegalArgumentException if arguments are neither Integer nor Character
      * @throw IllegalArgumentException if arguments are not the same type
@@ -80,7 +80,6 @@ public class Sort {
      * */
     private static <T> int findPivot(T[] array, int startIndex, int endIndex, boolean isFirstCall,
                                      String sortType) {
-
 
         if (isFirstCall) {
             int randomIndex = (int) (Math.random() * (endIndex - startIndex + 1)) + startIndex;
